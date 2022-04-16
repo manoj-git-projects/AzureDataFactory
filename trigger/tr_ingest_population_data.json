@@ -1,0 +1,25 @@
+{
+	"name": "tr_ingest_population_data",
+	"properties": {
+		"description": "Trigger pipeline on file creation",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_ingest_population_data",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/population/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/8027b605-cf3f-4128-810f-74cd5b6e22fd/resourceGroups/covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/sacovidreportingazure",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

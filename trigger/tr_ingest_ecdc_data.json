@@ -1,0 +1,25 @@
+{
+	"name": "tr_ingest_ecdc_data",
+	"properties": {
+		"description": "Ingest all ecdc data",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_ingest_ecdc_data",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2022-04-16T08:06:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"name": "adf-covid-reporting-azure",
+	"location": "uaenorth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "18aa708d-dc81-41c6-82e2-c7dd78615de2",
+		"tenantId": "9179d01a-e94c-4488-b5f0-4554bc474f8c"
+	}
+}
