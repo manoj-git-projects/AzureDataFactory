@@ -3,7 +3,7 @@
 	"properties": {
 		"description": "Trigger pipeline on file creation",
 		"annotations": [],
-		"runtimeState": "Started",
+		"runtimeState": "Stopped",
 		"pipelines": [
 			{
 				"pipelineReference": {
